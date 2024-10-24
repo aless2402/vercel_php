@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el margen se incluyan en el tamaño total de los elementos */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://example.com/tu-imagen-de-fondo.jpg') no-repeat center center fixed; /* Cambia la URL por la de tu imagen */
+    background-size: cover; /* Cubre toda la pantalla */
+    color: #333; /* Color de texto */
+}
+
+header {
+    background-color: rgba(244, 244, 244, 0.9); /* Fondo semitransparente */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007BFF; /* Color del enlace */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s; /* Efecto de transición */
+}
+
+nav a:hover {
+    color: #0056b3; /* Color al pasar el mouse */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Efecto de transición */
+}
+
+input:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column; /* Navegación en columna en pantallas pequeñas */
+    }
+
+    nav a {
+        margin: 5px 0; /* Menor margen en enlaces */
+    }
+}
